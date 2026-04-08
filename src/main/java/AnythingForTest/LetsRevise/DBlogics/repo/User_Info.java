@@ -1,4 +1,4 @@
-package AnythingForTest.LetsRevise.repo;
+package AnythingForTest.LetsRevise.DBlogics.repo;
 
 import org.springframework.data.annotation.Id;
 

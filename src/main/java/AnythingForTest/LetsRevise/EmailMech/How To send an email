@@ -1,0 +1,25 @@
+we use java email sender
+we need two things outside the code block,
+1. Add(turn on) the two step verification in the Gmail>security in your gmail app
+2. you will need to add a few things , such as sender details username and password (which comes from the last step)
+in application.properties
+
+reciever end email is hard coded in the code block , that is , we can use api calls and beans to find reciver email
+from the dB and use it
+
+few features to work with ,
+Delay in sending the mail,
+use the analysis and select which mail to send
+
+
+initial  mail sent has body,
+"
+Acqua Eden is a project designed to embrace luxurious living. The sea-facing balcony becomes a private box seat to witness nature's most mesmerizing performances every day. It showcases the epitome of enchanting nature, where every day feels like a vacation. Acqua Eden spans 9 acres of pure tranquility. It's more than a home; it's a sanctuary where resort-style living is interlaced with every aspect of your day.
+Surrounded by nature's verdant embrace, your forest-facing apartment is a respite from the world. Let the serenade of rustling leaves and distant bird calls be your daily soundtrack, grounding you in nature's quiet wonder. Your villa is the epitome of expansive luxury. It's not just about the uninterrupted views of the vast ocean but the feeling of limitless possibilities. With high ceilings and flowing spaces, every day feels like a vacation.
+At the heart of Acqua Eden's leisure landscape is the club- a central hub where elegance and amenities converge amidst Goan serenity. Designed as a microcosm of fine living, the club harmoniously blends relaxation and activity. Here, the amenities are curated to cater to the refined tastes of those who seek not just a residence but a canvas for living.
+RERA No: PRGO03242174 | www.rera.goa.gov.in | www.bhutanigroup.com Collection A/C Acqua Eden: Beneficiary Name: Parmesh Construction Company Limited | Account No: 99921102030405 | IFSC: HDFC0000088 | Bank Name: HDFC Bank
+
+"
+
+sender : homer simpson
+reciever : baadal
