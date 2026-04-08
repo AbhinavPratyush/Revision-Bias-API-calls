@@ -8,6 +8,6 @@ public class Home_Controller {
 
     @GetMapping("/")
     public String home(){
-        return "Email.sent";
+        return "sendEmail";
     }
 }
