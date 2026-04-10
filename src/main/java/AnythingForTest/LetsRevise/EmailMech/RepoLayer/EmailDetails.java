@@ -6,4 +6,7 @@ public class EmailDetails {
     public String subject;
     public String attachment;
     public String body;
+
+
+
 }
