@@ -16,7 +16,8 @@ public class EmailController {
 
     @PostMapping("/sendEmail")
     public void Send(@RequestBody  EmailDetails e){
-        emailService.SendMailWithAttachment(e);
+        System.out.println(e.toString());
+        emailService.SendMailWithoutAttachment(e);
 
     }
 
