@@ -16,10 +16,10 @@ public class EmailController {
     public EmailService emailService;
 
     @PostMapping("/sendEmail")
-    public void Send(@RequestBody  EmailDetails e){
+    public String Send(@RequestBody  EmailDetails e){
         System.out.println(e.toString());
         emailService.SendMailWithoutAttachment(e);
-
+return"successfully sent the mail";
     }
 
 //    @GetMapping("/")

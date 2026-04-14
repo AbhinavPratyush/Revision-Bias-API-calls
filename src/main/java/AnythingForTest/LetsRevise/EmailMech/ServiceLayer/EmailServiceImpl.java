@@ -14,8 +14,8 @@ public class EmailServiceImpl implements EmailService{
     @Autowired
     public JavaMailSender javaMailSender;
 
-   // @Value("${spring.mail.sender}")
-    private String sender="abhinavpratyush273@gmail.com";
+    @Value("${spring.mail.sender}")
+    private String sender;
 
     @Override
     public void SendMailWithoutAttachment(EmailDetails e) {
@@ -28,9 +28,11 @@ try{
 simpleMailMessage.setFrom(sender);
 
 javaMailSender.send(simpleMailMessage);
+System.out.print("hittttttttt");
 
 }
 catch (Exception exp){
+    exp.printStackTrace();
 
 }
 

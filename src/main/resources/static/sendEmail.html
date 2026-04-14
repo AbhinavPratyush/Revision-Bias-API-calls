@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sendEmail</title>
+
+</head>
+<body>
+Just messing with it
+<form id="emailForm">
+    <input type="text" id="recipient" placeholder="Recipient"><br>
+    <input type="text" id="subject" placeholder="Subject"><br>
+    <textarea id="msgBody" placeholder="Message"></textarea><br>
+
+    <button type="submit">Send Email</button>
+</form>
+<script>
+    console.log("JS loaded");
+    document.getElementById("emailForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // stop page reload
+        console.log("subvmitting");
+        const data = {
+            to: document.getElementById("recipient").value,
+            subject: document.getElementById("subject").value,
+            body: document.getElementById("msgBody").value
+        };
+
+        fetch("http://localhost:8080/sendEmail", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.text())
+        .then(result => {
+            alert("Response: " + result);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+</script>
+</body>
+</html>

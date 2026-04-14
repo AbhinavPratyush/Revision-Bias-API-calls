@@ -14,6 +14,7 @@ public class EmailDetails {
     public void setTo(String to) {
         this.to = to;
     }
+    public EmailDetails(){}
 
     public EmailDetails(String body, String attachment, String subject, String to) {
         this.body = body;
