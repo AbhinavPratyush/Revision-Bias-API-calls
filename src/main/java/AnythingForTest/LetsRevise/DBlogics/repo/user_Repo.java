@@ -8,5 +8,5 @@ import java.util.List;
 @Repository
 public interface user_Repo extends MongoRepository<User_Info,String> {
     @Override
-    List<User_Info> findAllById(Iterable<String> strings);
+    List<User_Info> findAllByemail(Iterable<String> strings);
 }
