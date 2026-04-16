@@ -14,11 +14,11 @@ String email;
         this.user_name = user_name;
     }
 
-    public String getUsers_Statement() {
+    public String getEmail() {
         return email;
     }
 
-    public void setUsers_Statement(String users_Statement) {
+    public void setEmail(String users_Statement) {
         email = users_Statement;
     }
 
